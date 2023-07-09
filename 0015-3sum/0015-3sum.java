@@ -4,6 +4,7 @@ class Solution {
         Arrays.sort(nums);
         for(int i=0;i<nums.length-1;i++){
            int j=i+1,k=nums.length-1;
+            if(nums[i]>0) continue;
             while(j<k){
                 int sum=nums[i] + nums[j] + nums[k];
                 if(sum==0){
